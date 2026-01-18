@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark1: #1A0B2E;
+    --dark2:  #2A186C;
+    --green: #00FF88;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--dark1);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    color: white;
+}
+.navbar .toggle{
+    display: none;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border: none;
+    background-color: transparent;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    list-style: none;
+}
+.navbar nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10000px;
+    background: linear-gradient(rgba(145, 0, 248, 1),rgba(251, 9, 180, 1) ,  rgba(247, 233, 63, 1));
+    color: white;
+    font-weight: 600;
+}
+.btn:hover{
+    box-shadow: 0 0 10px rgba(251, 9, 180, 1);
+}
+.hero{
+    background-image: url(./images/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid transparent;
+    align-items: center;
+}
+.hero .hero-container{
+    max-width: 1200px;
+    margin: 101px auto;
+    place-items: center;
+    text-align: center;
+}
+.hero-container .icon-wrapped{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.mic{
+    background-image: url(./images/hero-circle.png);
+    padding: 116px;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.new-badge{
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0 0 10px #00FF88;
+    position: absolute;
+    transform: translate(80%, 92%);
+}
+.hero-content h1{
+    color: white;
+    font-size: 3.75rem;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+.hero-content p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+.btn-box .btn-2{
+    margin-left: 8px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10000px;
+    font-weight: 600;
+    color: #00FF88;
+    background-color: transparent;
+    border: 2px solid #00FF88;
+}
+.btn-2:active{
+    color: rgba(251, 9, 180, 1);
+    border: 2px solid rgba(251, 9, 180, 1);
+}
+.about-container{
+    margin: 0 auto;
+}
+.about-content{
+    text-align: center;
+    color: white;
+}
+.about-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.about-content p{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 45px;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.rate{
+    margin: 80px auto;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.rate div h1{
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 576px) {
+    .navbar .toggle{
+        display: block;
+    }
+    .hero-container{
+        margin: 0 auto 50px;
+    }
+    .navbar nav, .navbar .btn{
+        display: none;
+    }
+    .rate{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
