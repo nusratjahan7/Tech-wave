@@ -13,6 +13,12 @@
 
 body{
     font-family: "Inter", sans-serif;
+    /* background-color: var(--dark1); */
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+/* header style  */
+header{
     background-color: var(--dark1);
 }
 .container{
@@ -116,6 +122,11 @@ body{
     color: rgba(251, 9, 180, 1);
     border: 2px solid rgba(251, 9, 180, 1);
 }
+/* about style  */
+.about{
+    background-color: var(--dark1);
+    border: 1px solid var(--dark1);
+}
 .about-container{
     margin: 0 auto;
 }
@@ -150,6 +161,63 @@ hr{
     color: #00FF88;
     margin-bottom: 16px;
 }
+#why{
+    background-color: #230E3D;
+    border: 1px solid #230E3D;
+}
+.why-container{
+    margin: 120px auto;
+    text-align: center;
+}
+.why-content{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.card-container{
+    margin: 0 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+.card{
+  background-color: rgba(53, 17, 101, 0.4);
+  color: white;
+  text-align: left;
+  padding: 40px;
+  border-radius: 40px;
+}
+.card h4{
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+#card-1{
+    grid-row: span 2;
+    grid-column: span 1;
+}
+#card-1 img{
+   margin-top: 50px;
+}
+#card-2{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+#card-3{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+#card-4{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+#card-5{
+    grid-row: span 1;
+    grid-column: span 1;
+}
 @media screen and (max-width: 576px) {
     .navbar .toggle{
         display: block;
@@ -162,5 +230,15 @@ hr{
     }
     .rate{
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        padding: 20px;
+        width: 100%;
     }
 }
