@@ -218,6 +218,80 @@ hr{
     grid-row: span 1;
     grid-column: span 1;
 }
+/* features section style  */
+.features{
+    background-color: var(--dark1);
+    border: 1px solid var(--dark1);
+}
+.features-container{
+    margin: 120px auto;
+    text-align: center;
+    color: white;
+}
+.episodes{
+    margin-bottom: 120px;
+}
+.episodes-heading h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.eposodes-content{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    text-align: center;
+    justify-self: center;
+    margin: 0 auto;
+    gap: 46px
+}
+.eposodes-content div{
+    background-color: #230E3D;
+    border-radius: 40px;
+    text-align: left;
+}
+.eposodes-content div iframe{
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.eposodes-content div h3{
+    margin: 16px;
+}
+.eposodes-content div p{
+    margin: 16px;
+}
+.eposodes-content div h4{
+    font-size: 1.25rem;
+    margin: 16px;
+    color: #00FF88;
+}
+.meet{
+    justify-content: center;
+}
+.meet-heading{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.meet-card{
+    display: flex;
+    background-color: #230E3D;
+    margin: 0 200px;
+    padding: 40px;
+}
+.meet-content{
+    text-align: left;
+    margin-left: 30px;
+    place-content: center;
+}
+.meet-content p{
+    font-weight: 200;
+    margin: 16px 0;
+}
+.icons img{
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid rgba(251, 9, 180, 1);
+    border-radius: 50%;
+}
 @media screen and (max-width: 576px) {
     .navbar .toggle{
         display: block;
@@ -240,5 +314,12 @@ hr{
     .card{
         padding: 20px;
         width: 100%;
+    }
+    .eposodes-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .meet-card{
+        flex-direction: column;
+        margin: 0 auto;
     }
 }
