@@ -292,6 +292,37 @@ hr{
     border: 1px solid rgba(251, 9, 180, 1);
     border-radius: 50%;
 }
+footer{
+    background-image: url(./images/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+}
+.footer{
+    margin: 80px auto;
+    text-align: center;
+    color: white;
+}
+.footer p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+.socials{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    justify-self: center;
+    margin: 15px auto;
+    gap: 15px;  
+}
+.socials div{
+    display: flex;
+}
+.socials div img{
+    margin-right: 5px;
+}
+
 @media screen and (max-width: 576px) {
     .navbar .toggle{
         display: block;
@@ -302,7 +333,7 @@ hr{
     .navbar nav, .navbar .btn{
         display: none;
     }
-    .rate{
+    .rate, .socials{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
